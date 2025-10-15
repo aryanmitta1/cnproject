@@ -21,10 +21,10 @@ def reconstructFile(storage: str, out: str) -> None:
                     print(f"📥 Appended {fileName}: {len(data)} bytes")
                     total_bytes += len(data)
 
-        print(f"✅ File successfully reconstructed as '{out}' ({total_bytes} bytes).")
+        print(f"File successfully reconstructed as '{out}' ({total_bytes} bytes).")
 
     except Exception as e:
-        print(f"❌ Error: {str(e)}")
+        print(f"Error: {str(e)}")
 
 if __name__ == "__main__":
     reconstructFile("downloads", "re.txt")
