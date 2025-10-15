@@ -9,7 +9,7 @@ def reconstructFile(storage: str, out: str) -> None:
 
         # Sort: safe for names like downloaded_chunk_10.bin
         fileParts.sort(key=lambda name: int(name.split("_")[-1].split(".")[0]))
-        print("📦 Files to reconstruct:", fileParts)
+        print("Files to reconstruct:", fileParts)
 
         total_bytes = 0
         with open(out, 'wb') as destination:
